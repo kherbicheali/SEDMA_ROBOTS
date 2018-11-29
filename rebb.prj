@@ -1,0 +1,19 @@
+toute ligne ne debutant pas par un caractere # est ignoree
+********************************************************************
+fichier de sauvegarde du projet : rebb
+Date :jeudi 29 novembre 2018 à 04:00:12
+********************************************************************
+
+Peut etre edite quand le projet n'est pas ouvert dans SEDMA,
+Il est vivement deconseille de modifier ce fichier ! 
+
+#MAQUETTE Robots
+#NIVEAUVERIFES Stricte
+#NAME rebb
+#TYPE PetriNetwork
+#ENTREES  surt2  surt1  suremb  surt  scd  scg  a  ft1  b  c  d  ft2  e  fpose  f  g  it  led1  led2  led5  led6  led3  led4  fprise  led7  led8 
+#SORTIES  D  G  TABLE  PRISE  T1  T2  POSE 
+#Procedes dfv 
+#Objectifs  
+#Commandes  
+Fin du fichier de description du projet

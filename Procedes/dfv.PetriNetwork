@@ -1,0 +1,51 @@
+toute ligne ne debutant pas par un caractere # est ignoree
+*******************************************************
+fichier de sauvegarde du fichier RdP : dfv
+Date : jeudi 29 novembre 2018 à 04:00:12
+********************************************************
+
+Peut être edite quand le graphe du RdP n'est pas ouvert dans SEDMA,
+Il est vivement deconseille de modifier ce fichier ! 
+
+#NAME dfv
+#PROJECT rebb
+#TYPEGRAPHE PetriNetwork
+
+debut de la description du RdP
+
+<#p> <int x> <int y> <nom> <ancre> {<attribut>} <ancre> <M0>  <couleur>
+
+#p 266 263 p1G nw {} sw 1 #000000
+#p 366 170 p2G nw {T1} s 0 #000000
+#p 364 373 p3G nw {T2} s 0 #000000
+#p 176 168 p4G nw {} s 0 #000000
+#p 173 368 p5G nw {} s 0 #000000
+#p 485 245 p6G nw {} s 1 #000000
+#p 674 245 p7G nw {} s 0 #000000
+
+<#t> <int x> <int y> <nom> <ancre> {<attribut>} <ancre>  <couleur>
+
+#t 366 264 t1G <NameLocation:tbd> {} s #000000
+#t 268 167 t2G <NameLocation:tbd> {(!ft1;)} s #000000
+#t 264 372 t3G <NameLocation:tbd> {(!ft2;)} s #000000
+#t 174 259 t4G <NameLocation:tbd> {} s #000000
+#t 582 198 t5G <NameLocation:tbd> {(a;)} s #000000
+#t 583 287 t6G <NameLocation:tbd> {(!a;)} s #000000
+
+<#a> <src> <dst> <poids> <ancre>  <couleur> <isLooped>
+
+#a p1G t1G 1 <NameLocation:tbd> #000000 false
+#a p2G t2G 1 <NameLocation:tbd> #000000 false
+#a p3G t3G 1 <NameLocation:tbd> #000000 false
+#a p4G t4G 1 <NameLocation:tbd> #000000 false
+#a p5G t4G 1 <NameLocation:tbd> #000000 false
+#a p6G t5G 1 <NameLocation:tbd> #000000 false
+#a p7G t6G 1 <NameLocation:tbd> #000000 false
+#a t1G p2G 1 <NameLocation:tbd> #000000 false
+#a t1G p3G 1 <NameLocation:tbd> #000000 false
+#a t2G p4G 1 <NameLocation:tbd> #000000 false
+#a t3G p5G 1 <NameLocation:tbd> #000000 false
+#a t4G p1G 1 <NameLocation:tbd> #000000 false
+#a t5G p7G 1 <NameLocation:tbd> #000000 false
+#a t6G p6G 1 <NameLocation:tbd> #000000 false
+Fin du fichier de description du reseau de Petri
